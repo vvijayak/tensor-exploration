@@ -1,9 +1,16 @@
 # Tensor Exploration
 
-This repo includes my exploration of some basic model tpyes including:
+Additional README.md in each subdirectory.
+
+This repo includes my exploration of some basic models:
 
 * Regression
-* KNN
+  * Linear Regression
+    * Predict students final grade (Accuracy:96.48%)
+* Classification
+  * KNN
+    * Classify car class
+    * Classify iris type
 * SVM
 * K Means Clustering
 

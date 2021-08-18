@@ -9,7 +9,8 @@ from sklearn import linear_model
 
 TRAIN_DATA_FILE_PATH = '../data/student-por.csv'
 TEST_DATA_FILE_PATH = '../data/student-mat.csv'
-FEATURES = ['G1', 'G2', 'G3']
+# FEATURES = ['G1', 'G2', 'G3']
+FEATURES = ['G2', 'G3']
 PREDICT = 'G3'
 TEST_SET_RATIO=0.1
 TRAIN_COUNT = 100
@@ -31,7 +32,6 @@ def plot():
 
 def predict_final_grades():
     data = get_data(TEST_DATA_FILE_PATH, FEATURES)
-    print(data.head)
     x = np.array(data.drop([PREDICT], 1))
     y = np.array(data[PREDICT])
 
@@ -81,8 +81,8 @@ def train(train_count):
 
 def main():
     train(TRAIN_COUNT)
-    plot()
-    predict_final_grades()
+    # plot()
+    # predict_final_grades()
 
 
 if __name__ == '__main__':
